@@ -1,0 +1,60 @@
+
+# 2023-07-08 00:28:11.900348
++Manage the power status and service status of windows servers, remotely.  Use powershell commands to save time.
+
+# 2023-07-08 00:33:25.678277
++Add the ability to run any custom command
+
+# 2023-07-08 00:37:16.054012
++Create a GUI that allows a list of servers to be monitored and important services selected for monitoring
+
+# 2023-07-08 00:48:11.787197
++Fully comment and code an extensible API backend. Plan for advanced features
+
+# 2023-07-08 00:50:36.682683
++Add endpoints for windows server power and service statuses/control
+
+# 2023-07-08 00:52:52.345252
++Provide detailed instructions on install / using the code
+
+# 2023-07-08 00:54:03.760816
++output to README.md
+
+# 2023-07-08 01:48:31.691350
++Add error reporting and handling
+
+# 2023-07-08 01:49:18.287028
++Add error reporting and hanlding
+
+# 2023-07-08 01:52:09.601188
++Allow a list of important servers and services to be created. All targets will appear in either a RED or GREEN box depending on if they are online or not.
+
+# 2023-07-08 01:53:19.752320
++try edits again
+
+# 2023-07-08 01:54:44.113061
++apply edits and exit
+
+# 2023-07-08 01:55:13.748966
++confirm all changes
+
+# 2023-07-08 01:56:27.484549
++commit all changes to remote repository https://github.com/swichers-xx/reboot-vox
+
+# 2023-07-08 01:56:55.519414
++commit all changes
+
+# 2023-07-08 01:57:44.868506
++exit
+
+# 2023-07-08 01:58:35.465788
++add git ignore file
+
+# 2023-07-08 01:59:29.007507
++commit
+
+# 2023-07-08 01:59:58.562626
++git add .
+
+# 2023-07-08 02:00:20.452927
++exit
