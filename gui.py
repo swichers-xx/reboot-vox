@@ -44,5 +44,17 @@ def check_service_status(event):
 # Bind the function to the listbox
 service_listbox.bind('<<ListboxSelect>>', check_service_status)
 
+# Function to update the status of important servers and services
+def update_status_list():
+    server_service_list = [('server1', 'service1'), ('server2', 'service2')]  # replace with actual list
+    status_list = app.get_status_for_list(server_service_list)
+    for server_name, service_name, status in status_list:
+        color = 'green' if status == 'online' else 'red'
+        label = tk.Label(root, text=f'{server_name} - {service_name}: {status}', bg=color)
+        label.pack()
+
+# Call update_status_list
+update_status_list()
+
 # Start the main loop
 root.mainloop()
