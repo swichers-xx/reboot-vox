@@ -1,11 +1,9 @@
-# Import the required module
 import subprocess
 
-# Define the server name
-serverName = "Server01"
+def get_service_status(server_name, service_name):
+    # Run the command on the remote server and return the output
+    return subprocess.check_output(["powershell", "-Command", f"Invoke-Command -ComputerName {server_name} -ScriptBlock {{ Get-Service -Name {service_name} }}"])
 
-# Define the command to run
-command = input("Enter the command to run: ")
-
-# Run the command on the remote server
-subprocess.run(["powershell", "-Command", f"Invoke-Command -ComputerName {serverName} -ScriptBlock {{ {command} }}"])
+def get_service_list(server_name):
+    # Run the command on the remote server and return the output
+    return subprocess.check_output(["powershell", "-Command", f"Invoke-Command -ComputerName {server_name} -ScriptBlock {{ Get-Service }}"])
