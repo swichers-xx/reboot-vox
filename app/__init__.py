@@ -16,12 +16,14 @@ def create_app():
     db.init_app(app)
 
     # Import the resources
-    from .resources import ExampleResource
+    from .resources import ExampleResource, ServerResource, ServiceResource
 
     # Initialize the API
     api = Api(app)
 
     # Add the resources to the API
     api.add_resource(ExampleResource, '/example')
+    api.add_resource(ServerResource, '/server/<string:server_name>')
+    api.add_resource(ServiceResource, '/service/<string:server_name>/<string:service_name>')
 
     return app
